@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <style>
+      .bg-div{
+        width: 100%;
+        height: 100%;
+      }
+      .main-div{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./sofa\ black.jpeg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .main-div h1{
+        color: antiquewhite;
+        margin-top: 10%;
+        padding-left: 60px;
+        padding-right: 60px;
+         text-align: center;
+         font-size: 70px;
+      }
+      .main-div p{
+        color: antiquewhite;
+        margin-left: 60px;
+        font-size: 30px;
+        text-align:center;
+      }
+      .btn{
+        width: 20%;
+        margin: 10px 0px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        color: antiquewhite;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 20px;
+      }
+      form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      footer{
+        display: none;
+      }
+      @media (min-width: 320px) and (max-width: 480px) {
+    .main-div {
+        width: 100vw;
+        height: 100vh;
+    }
+    .main-div h1{
+        color: antiquewhite;
+        margin-top: 08%;
+        padding: auto;
+         text-align: center;
+         font-size: 50px;
+      }
+      .main-div p{
+        color: antiquewhite;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align:center;
+      }
+    .btn{
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 25%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      }
+      @media (min-width: 481px) and (max-width: 768px) {
+  .main-div {
+        width: 100vw;
+        height: 100vh;
+    }
+    .main-div h1{
+        color: antiquewhite;
+        margin-top: 10%;
+        padding: auto;
+         text-align: center;
+         font-size: 60px;
+      }
+      .main-div p{
+        color: antiquewhite;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 25px;
+        text-align:center;
+      }
+    .btn{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 35%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      }
+      @media (min-width: 769px) and (max-width: 1024px) {
+    .main-div {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-div h1{
+        color: antiquewhite;
+        margin-top: 08%;
+        padding: auto;
+         text-align: center;
+         font-size: 60px;
+      }
+      .main-div p{
+        color: antiquewhite;
+        margin-top: 10px;
+        margin-left: 20px;
+        font-size: 20px;
+        text-align:center;
+      }
+     .btn{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 0px;
+      }
+      form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      footer{
+        display: none;
+      }
+      }
+      @media (min-width: 1025px) and (max-width: 1200px) {
+    .main-div {
+        width: 100%;
+        height: 100vh;
+    }
+    .main-div h1{
+        color: antiquewhite;
+        margin-top: 08%;
+        padding: auto;
+         text-align: center;
+         font-size: 60px;
+      }
+      .main-div p{
+        color: antiquewhite;
+        margin-left: 80px;
+        font-size: 30px;
+        text-align:center;
+      }
+      .btn{
+        width: 20%;
+        margin-top: 20px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 10px;
+      }
+      form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      footer{
+        display: none;
+      }
+      } 
+    </style>
+
+<div class="container-fluid main-div pt-4 ">
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #17181c" >
+      <div class=" container-fluid">
+        <a class="navbar-brand" href="#">HAVENLY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link active" aria-current="page" href="./shop.html">SHOP</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOW IT WORKS
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./details.html">Details</a></li>
+                <li><hr class="dropdown-divider"></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn01 btn-outline-success" type="submit">SEARCH</button>
+          </form>
+          <button type="button" class="btn btn-outline-warning">
+            <a href="./login.html">LOGIN</a>
+      </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section data-aos="fade-right">
+    <h1>Celebrating living with fine designing</h1>
+    <p>Stunning interior design services, now within reach.</p>
+    <button data-aos="fade-up" type="button" class="btn btn-outline-warning">
+      <a href="./home.html">FIND YOUR STYLE</a>
+   </button>
+  </section>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script>
+  AOS.init();
+</script>
+  </body>
+</html>

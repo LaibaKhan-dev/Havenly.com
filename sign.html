@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  
+  <style>
+    .bg-div{
+      width: 100%;
+      height: 100%;
+    }
+    .main-div{
+      width: 100%;
+      height: 99vh;
+      background-image: url(https://hips.hearstapps.com/hmg-prod/images/jessica-davis-2-1588356154.jpg?crop=1xw:1xh;center,top&resize=980:*);
+     background-size: 100vw 100vh;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    nav .btn{
+      width: 20%;
+      margin: 10px 0px;
+      margin-left: 40%;
+      border-radius: 30px 30px;
+    }
+    .btn a{
+      color: antiquewhite;
+      font-size: 30px;
+      text-decoration: none;
+    }
+    nav .btn{
+      width: 140px;
+      margin-left: 3%;
+    }
+    nav .btn a{
+      font-size: 20px;
+      margin-left: 2px;
+    }
+    nav .collapse{
+      margin-left: 10%;
+      text-align: center;
+    }
+    nav .collapse ul li{
+      margin:0px 20px;
+    }
+    
+    .main-div nav form{
+      width: 30vw;
+      margin-left: 5%;
+    }
+    .navbar a{
+      margin-left: 20px;
+    }
+    
+    .login-form{
+        background-color: white;
+        width: 35%; 
+        height: 78vh; 
+        margin-top: 20px; 
+        margin-left: 35%; 
+        border-radius: 30px 30px;
+      }
+      .login-form p{
+        padding-left: 95px; 
+        margin-bottom: 05%; 
+        font-size: 18px; 
+        color: black;
+      }
+      .login-form1{
+        margin-left: 90px;
+      }
+      .login-form1 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form2{
+        margin-left: 90px
+      }
+      .login-form2 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form3{
+        margin-left: 90px
+      }
+      .login-form3 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form .btn{
+        width: 60%; height: 50px; margin-left: 85px; border-radius: 30px 30px;
+      }
+      .login-form4 p{
+        padding-left: 120px; margin-top: 25px; font-size: 15px; color: black;
+      }
+
+    @media (min-width: 320px) and (max-width: 480px) {
+    .main-div {
+        width: 100vw;
+        height: 130vh;
+        background-image: url('https://assets.architecturaldigest.in/photos/60084dd6cce5700439e12bf7/master/pass/modern-living-room-decor-1366x768.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .btn{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 25%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      
+      nav .btn{
+        width: 20%;
+        margin: 10px 0px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        color: antiquewhite;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 20px;
+      }
+      
+      .main-div nav form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      .login-form{
+        background-color: white;
+        width: 85%; 
+        height: 100vh; 
+        margin-top: 20px; 
+        margin-left: 5%; 
+        border-radius: 30px 30px;
+      }
+      .login-form p{
+        padding-left: 40px; 
+        margin-bottom: 05%; 
+        font-size: 12px; 
+        color: black;
+      }
+      .login-form1{
+        margin-left: 45px;
+      }
+      .login-form1 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form2{
+        margin-left: 45px
+      }
+      .login-form2 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form3 {
+        margin-left: 45px
+      }
+      .login-form3 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form .btn{
+        width: 60%; height: 40px; margin-left: 55px; border-radius: 30px 30px;
+      }
+      .login-form4 p{
+        padding-left: 20px; margin-top: 25px; font-size: 15px; color: black;
+      }
+      .footer{
+        display: none;
+      }
+      .form-check{
+        width: 80%;
+      }
+      }
+      @media (min-width: 481px) and (max-width: 768px) {
+        .main-div {
+        width: 100vw;
+        height: 130vh;
+        background-image: url('https://assets.architecturaldigest.in/photos/60084dd6cce5700439e12bf7/master/pass/modern-living-room-decor-1366x768.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .btn{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 25%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      
+      nav .btn{
+        width: 20%;
+        margin: 10px 0px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        color: antiquewhite;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 20px;
+      }
+      
+      .main-div nav form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      .login-form{
+        background-color: white;
+        width: 45%; 
+        height: 100vh; 
+        margin-top: 20px; 
+        margin-left: 25%; 
+        border-radius: 30px 30px;
+      }
+      .login-form p{
+        padding-left: 50px; 
+        margin-bottom: 05%; 
+        font-size: 18px; 
+        color: black;
+        text-align: center;
+      }
+      .login-form1{
+        margin-left: 75px;
+      }
+      .login-form1 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form2{
+        margin-left: 75px
+      }
+      .login-form2 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form3{
+        margin-left: 75px;
+      }
+      .login-form3 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form .btn{
+        width: 60%; height: 40px; margin-left: 55px; border-radius: 30px 30px;
+      }
+      .login-form4 p{
+        padding-left: 5-px; margin-top: 25px; font-size: 15px; color: black; text-align: center;
+      }
+      .footer{
+        display: none;
+      }
+      .form-check{
+        width: 80%;
+      }
+       }
+       @media (min-width: 769px) and (max-width: 1024px) {
+        .main-div {
+        width: 100vw;
+        height: 130vh;
+        background-image: url('https://assets.architecturaldigest.in/photos/60084dd6cce5700439e12bf7/master/pass/modern-living-room-decor-1366x768.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    .btn{
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 25%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        font-size: 20px;
+      }
+      
+      nav .btn{
+        width: 20%;
+        margin: 10px 0px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        color: antiquewhite;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 20px;
+      }
+      
+      .main-div nav form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      .login-form{
+        background-color: white;
+        width: 45%; 
+        height: 100vh; 
+        margin-top: 20px; 
+        margin-left: 25%; 
+        border-radius: 30px 30px;
+      }
+      .login-form p{
+        padding-left: 50px; 
+        margin-bottom: 05%; 
+        font-size: 18px; 
+        color: black;
+        text-align: center;
+      }
+      .login-form1{
+        margin-left: 75px;
+      }
+      .login-form1 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form2{
+        margin-left: 75px
+      }
+      .login-form2 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form3{
+        margin-left: 75px
+      }
+      .login-form3 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form .btn{
+        width: 60%; height: 40px; margin-left: 55px; border-radius: 30px 30px;
+      }
+      .login-form4 p{
+        padding-left: 5-px; margin-top: 25px; font-size: 15px; color: black; text-align: center;
+      }
+      .footer{
+        display: none;
+      }
+      .form-check{
+        width: 80%;
+      }
+       }
+      @media (min-width: 1025px) and (max-width: 1200px) {
+        .bg-div{
+        width: 100%;
+        height: 100%;
+      }
+      .main-div{
+        width: 100%;
+        height: 129vh;
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/jessica-davis-2-1588356154.jpg?crop=1xw:1xh;center,top&resize=980:*);
+       background-size: 100vw 100vh;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      nav .btn{
+        width: 20%;
+        margin: 10px 0px;
+        margin-left: 40%;
+        border-radius: 30px 30px;
+      }
+      .btn a{
+        color: antiquewhite;
+        font-size: 30px;
+        text-decoration: none;
+      }
+      nav .btn{
+        width: 140px;
+        margin-left: 3%;
+      }
+      nav .btn a{
+        font-size: 20px;
+        margin-left: 2px;
+      }
+      nav .collapse{
+        margin-left: 10%;
+        text-align: center;
+      }
+      nav .collapse ul li{
+        margin:0px 20px;
+      }
+      
+      .main-div nav form{
+        width: 30vw;
+        margin-left: 5%;
+      }
+      .navbar a{
+        margin-left: 20px;
+      }
+      .login-form{
+        background-color: white;
+        width: 35%; 
+        height: 95vh; 
+        margin-top: 20px; 
+        margin-left: 35%; 
+        border-radius: 30px 30px;
+      }
+      .login-form p{
+        padding-left: 65px; 
+        margin-bottom: 05%; 
+        font-size: 18px; 
+        color: black;
+      }
+      .login-form1{
+        margin-left: 90px;
+      }
+      .login-form1 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form2{
+        margin-left: 90px
+      }
+      .login-form3{
+        margin-left: 90px;
+      }
+      .login-form3 input{
+        height: 40px; width: 20vw;
+      }
+      .login-form3 p{
+        padding-left: 65px; font-size: 15px; color: black; text-align: center;
+      }
+      .login-form .btn{
+        width: 60%; height: 50px; margin-left: 85px; border-radius: 30px 30px;
+      }
+      .login-form4 p{
+        padding-left: 70px; margin-top: 25px; font-size: 15px; color: black; text-align: center;
+      }
+      .footer{
+        height: 70vh;
+      }
+      } 
+
+    
+
+    </style>
+
+  <body>
+
+<div class="container-fluid main-div pt-4 ">
+        <header>
+          <nav class="navbar navbar-expand-lg" data-bs-theme="dark" style="background-color: #17181c" >
+            <div class=" container-fluid">
+              <a class="navbar-brand" href="#">HAVENLY</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+                  </li>
+                  <li class="nav-item" >
+                    <a class="nav-link active" aria-current="page" href="./shop.html">SHOP</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      HOW IT WORKS
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./details.html">Details</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn01 btn-outline-success" type="submit">SEARCH</button>
+                </form>
+                <button type="button" class="btn btn-outline-warning">
+                  <a href="./login.html">LOGIN</a>
+            </button>
+              </div>
+            </div>
+          </nav>
+        </header>
+        
+        
+        <section class="login-form" data-aos="fade-right">
+            <form>
+              <section> 
+                <h3 class="login-formA ms-1"  style="width: 100%; padding-top: 10%;  text-align: center; font-size: 25px; color: black;">
+                  Sign Up for Havenly
+                </h3>
+                <p >
+                  Everyone deserves a beautiful home.
+                </p>
+            </section>
+            <div class="login-form1 mb-3" >
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="email" class="form-check" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+                <div class="login-form2 mb-3" >
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-check" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="login-form3 mb-3" >
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-check" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-warning">Submit</button>
+                <div class="login-form4">
+                  <p>
+                    Already have an account? <a href="./login.html">Sign in</a>
+                  </p>
+              </form>
+        </section>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+      <script>
+        AOS.init();
+      </script>
+    
+    </body>
+  </html>
+           
